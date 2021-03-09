@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Skytower Views during Quarantine</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Vue({
+        el: '#app',
+        data: {
+          days: [
+            {
+              id: "zero",
+              image:"./images/zero.jpg",
+              show: true
+            },
+            {
+              id: "one",
+              image:"./images/one.jpg",
+              show: true
+            },
+            {
+              id: "two",
+              image:"./images/two.jpg",
+              show: true
+            },
+            {
+              id: "three",
+              image:"./images/three.jpg",
+              show: true
+            },
+            {
+              id: "four",
+              image:"./images/three-1.jpg",
+              show: true
+            },
+            {
+              id: "five",
+              image:"",
+              show: false
+            },
+            {
+              id: "six",
+              image:"",
+              show: false
+            },
+            {
+              id: "seven",
+              image:"",
+              show: false
+            },
+            {
+              id: "eight",
+              image:"",
+              show: false
+            },
+            {
+              id: "nine",
+              image:"",
+              show: false
+            },
+            {
+              id: "ten",
+              image:"",
+              show: false
+            },
+            {
+              id: "eleven",
+              image:"",
+              show: false
+            },
+            {
+              id: "twelf",
+              image:"",
+              show: false
+            },
+            {
+              id: "thirteen",
+              image:"",
+              show: false
+            }
+          ]
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div v-for="day in days" :key="day.id" :class="day.id + ' flip-card'">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img v-if="day.show" :src="day.image" alt="Skytower" class="flip-card-image" />
+            <h2 v-else>Day {{ day.id }}</h2>
+          </div>
+          <div class="flip-card-back" :style="[day.show ? {'backgroundColor': 'dodgerblue'} : {'backgroundColor': '#bbb'}]">
+            <h2>Day {{ day.id }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
