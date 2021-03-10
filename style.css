@@ -5,7 +5,7 @@ html, body, #app {
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-template-rows: repeat(14, 350px);
+  grid-template-rows: repeat(14, 450px);
   gap: 10px;
   height: 100%;
 }
