@@ -1,5 +1,6 @@
 html, body, #app {
   height: 100%;
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 .container {

@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/jpg" href="./favicon.ico"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
   <title>Skytower Views during Quarantine</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
@@ -92,6 +94,8 @@
 </head>
 <body>
   <div id="app">
+    <h1>My Quarantine View</h1>
+    <p>This is what happens when you leave a wanna be photographer in a room with nothing to look at but the Skytower :)</p>
     <div class="container">
       <div v-for="day in days" :key="day.id" :class="day.id + ' flip-card'">
         <div class="flip-card-inner">
