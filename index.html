@@ -18,71 +18,85 @@
           days: [
             {
               id: "zero",
+              food: "./images/food-1.jpg",
               image:"./images/zero.jpg",
               show: true
             },
             {
               id: "one",
+              food: "./images/food-3.jpg",
               image:"./images/one.jpg",
               show: true
             },
             {
               id: "two",
+              food: "./images/food-4.jpg",
               image:"./images/two.jpg",
               show: true
             },
             {
               id: "three",
+              food: "./images/food-5.jpg",
               image:"./images/three.jpg",
               show: true
             },
             {
               id: "four",
+              food: "./images/food-6.jpg",
               image:"./images/four.jpg",
               show: true
             },
             {
               id: "five",
+              food: "./images/food-7.jpg",
               image:"./images/five.jpg",
               show: true
             },
             {
               id: "six",
+              food: "./images/food-8.jpg",
               image:"./images/six.jpg",
               show: true
             },
             {
               id: "seven",
+              food: "./images/food-10.jpg",
               image:"./images/seven.jpg",
               show: true
             },
             {
               id: "eight",
+              food: "./images/food-11.jpg",
               image:"./images/eight.jpg",
               show: true
             },
             {
               id: "nine",
+              food: "",
               image:"",
               show: false
             },
             {
               id: "ten",
+              food: "",
               image:"",
               show: false
             },
             {
               id: "eleven",
+              food: "",
               image:"",
               show: false
             },
             {
               id: "twelf",
+              food: "",
               image:"",
               show: false
             },
             {
               id: "thirteen",
+              food: "",
               image:"",
               show: false
             }
@@ -105,6 +119,7 @@
           </div>
           <div class="flip-card-back" :style="[day.show ? {'backgroundColor': 'dodgerblue'} : {'backgroundColor': '#bbb'}]">
             <h2>Day {{ day.id }}</h2>
+            <img v-if="day.show" :src="day.food" alt="food of the day" class="flip-card-food" />
           </div>
         </div>
       </div>
