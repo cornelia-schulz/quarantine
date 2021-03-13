@@ -1,20 +1,33 @@
 html, body, #app {
-  height: 100%;
   font-family: 'Shippori Mincho B1', serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-template-rows: repeat(14, 450px);
   gap: 10px;
   height: 100%;
+  background: url('./images/skytower.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #40435d;
+}
+
+.intro {
+  max-width: 400px;
+  text-align: justify;
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+  color: #141e25;
 }
 
 .flip-card {
   background-color: transparent;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  min-height: 450px;
+  perspective: 1000px;
 }
 
 .flip-card-inner {
