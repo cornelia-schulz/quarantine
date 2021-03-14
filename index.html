@@ -119,7 +119,7 @@
           </div>
           <div class="flip-card-back" :style="[day.show ? {'backgroundColor': 'dodgerblue'} : {'backgroundColor': '#bbb'}]">
             <h2>Day {{ day.id }}</h2>
-            <img v-if="day.show" :src="day.food" alt="food of the day" class="flip-card-food" />
+            <img v-if="day.show" :src="day.food" alt="food of the day" class="flip-card-food" loading=lazy />
           </div>
         </div>
       </div>
