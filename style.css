@@ -76,7 +76,7 @@ h1 {
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #486DB1;
   color: white;
   display: flex;
   flex-direction: column;
